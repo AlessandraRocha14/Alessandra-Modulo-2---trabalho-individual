@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="style.css">
+  <title>APP Código Secreto</title>
+</head>
+
+<body>
+  <style>
+    label {
+      font-size: 20px;
+    }
+
+    .form-control,
+    .form-select {
+      font-size: 20px;
+    }
+
+    .btn {
+      font-size: 20px;
+    }
+  </style>
+  <div class="container">
+    <form name="form1">
+      <div class="titulo">
+        <h1 class="display-4 font-italic">Aplicativo de Criptografia</h1>
+      </div>
+      <br>
+      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+      </div>
+      <div class="row">
+        <div class="col">
+          <select class="form-select" aria-label="Default select example" name="tipo" id="tipo">
+            <option selected value="0">Selecione o Tipo de Criptografia</option>
+            <option value="1">Base 64</option>
+            <option value="2">Cifra de César</option>
+          </select>
+        </div>
+        <br><br>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Informe a Chave de Criptografia" aria-label="First name"
+            name="chave" id="chave">
+        </div>
+        <br><br>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Digite a Mensagem" aria-label="First name" name="msg"
+            id="msg">
+        </div>
+        <br><br>
+        <div class="col">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+              Criptografar
+            </label>
+          </div>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Descriptografar
+            </label>
+          </div>
+          <br><br>
+          <button type="button" class="btn btn-primary" name="btn" id="btn">Confirmar</button>
+          <br><br><br><br>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Resultado" aria-label="Last name" name="result"
+              id="result" readonly>
+          </div>
+          <br><br><br>
+        </div>
+      </div>
+      <br>
+    </form>
+  </div>
+
+  <div class="col-md-6 px-0">
+    <p class="lead my-3">Aqui vocês poderam experimentar duas opções de Criptografia - Base 64 e Cifra de Cesar. Além de
+      Criptografar, o aplicativo ainda conta com a opção de Descriptografar.</p>
+  </div>
+</body>
+
+</html>
+<!-- JavaScript Bundle with Popper -->
+
+
+<script src="crip.js"></script>
